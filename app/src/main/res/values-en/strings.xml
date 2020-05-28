@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Language switch</string>
+
+    <string name="hi">Hello!</string>
+    <string name="ok">OK</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+
+</resources>

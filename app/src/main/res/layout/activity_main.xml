@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_language"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="1dp"
+        android:entries="@array/language"
+        app:layout_constraintBottom_toTopOf="@+id/sp_colors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_colors"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:entries="@array/colors"
+        app:layout_constraintBottom_toTopOf="@+id/bt_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_language" />
+
+    <TextView
+        android:id="@+id/tv_hi"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/hi"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ok" />
+
+    <Button
+        android:id="@+id/bt_ok"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:drawable/toast_frame"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:text="@string/ok"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_colors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
