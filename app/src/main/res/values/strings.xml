@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Language switch</string>
+    <string name="app_name">Language and styles</string>
 
     <string name="hi">Привет!</string>
     <string name="ok">OK</string>

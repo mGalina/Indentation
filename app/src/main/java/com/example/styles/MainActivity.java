@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Utils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_main);
 
         initViews();
@@ -34,17 +35,33 @@ public class MainActivity extends AppCompatActivity {
                 switch (selected1) {
                     case "Russian":
                     case "Русский":
-                        switchLocale ("ru");
+                        switchLocale("ru");
                         break;
                     case "English":
                     case "Английский":
-                        switchLocale ("en");
+                        switchLocale("en");
+                        break;
+                }
+
+                switch (selected2) {
+                    case "Black":
+                    case "Черный":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLACK);
+                        break;
+                    case "Blue":
+                    case "Синий":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
+                        break;
+                    case "Green":
+                    case "Зеленый":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_GREEN);
                         break;
                 }
             }
         });
     }
-    private void switchLocale (String language) {
+
+    private void switchLocale(String language) {
         Locale locale = new Locale(language);
         Configuration config = new Configuration();
         config.setLocale(locale);
