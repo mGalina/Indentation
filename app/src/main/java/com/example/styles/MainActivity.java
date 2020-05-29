@@ -44,17 +44,17 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 switch (selected2) {
-                    case "Black":
-                    case "Черный":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLACK);
+                    case "Major theme":
+                    case "Крупная тема":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MAJOR);
                         break;
-                    case "Blue":
-                    case "Синий":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
+                    case "Middle theme":
+                    case "Средняя тема":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MIDDLE);
                         break;
-                    case "Green":
-                    case "Зеленый":
-                        Utils.changeToTheme(MainActivity.this, Utils.THEME_GREEN);
+                    case "Minor theme":
+                    case "Мелкая тема":
+                        Utils.changeToTheme(MainActivity.this, Utils.THEME_MINOR);
                         break;
                 }
             }
